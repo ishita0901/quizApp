@@ -14,12 +14,12 @@ public class QuestionController {
     @Autowired
     QuestionService questionService;
     @GetMapping("allQuestions")
-    public ResponseEntity<List<Questions>> getAllQuestions(){
+    public List<Questions> getAllQuestions(){
         return questionService.getAllQuestions();
     }
 
     @GetMapping("language/{language}")//the category in {} is the path variable
-    public ResponseEntity<List<Questions>> getQuestionsByLanguage(@PathVariable String language){
+    public List<Questions> getQuestionsByLanguage(@PathVariable String language){
         return questionService.getQuestionsByLanguage(language);
     }
 
