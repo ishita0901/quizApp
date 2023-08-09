@@ -1,2 +1,2 @@
 # quizApp
-A quiz application made using Springboot with the implementation of CRUD operations.
+A quiz application developed with Springboot implements CRUD operations and Object Relation Mapping utilizing the JPA- an API specification focused mainly on ORM.
